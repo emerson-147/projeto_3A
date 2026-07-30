@@ -1,0 +1,378 @@
+/* ================================
+   TEMA MEDIEVAL DARK RPG
+================================ */
+
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=MedievalSharp&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family: "Cinzel", serif;
+    color:#f5e8c7;
+
+    background:
+    linear-gradient(rgba(0,0,0,.80),rgba(0,0,0,.85)),
+    url("https://images.unsplash.com/photo-1518562180175-34a163b1a9a6?auto=format&fit=crop&w=1500&q=80");
+
+    background-size:cover;
+    background-position:center;
+    background-attachment:fixed;
+
+    min-height:100vh;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    padding:40px;
+}
+
+/*=====================
+      FORMULÁRIO
+======================*/
+
+form{
+
+    width:900px;
+    max-width:100%;
+
+    background:rgba(20,18,15,.93);
+
+    border:3px solid #9b7d39;
+
+    border-radius:15px;
+
+    padding:35px;
+
+    box-shadow:
+    0 0 20px rgba(0,0,0,.8),
+    0 0 40px rgba(120,90,20,.25);
+
+    backdrop-filter: blur(4px);
+
+}
+
+/*=====================
+      TÍTULO
+======================*/
+
+h1{
+
+    font-family:"MedievalSharp", cursive;
+
+    text-align:center;
+
+    color:#e7c96b;
+
+    font-size:48px;
+
+    margin-bottom:35px;
+
+    text-shadow:
+    0 0 8px #ffdf80,
+    3px 3px 8px black;
+
+}
+
+/*=====================
+     FIELDSET
+======================*/
+
+fieldset{
+
+    border:2px solid #82652d;
+
+    border-radius:12px;
+
+    padding:25px;
+
+    margin-bottom:25px;
+
+    background:rgba(40,35,25,.55);
+
+}
+
+legend{
+
+    font-family:"MedievalSharp";
+
+    color:#f4d67d;
+
+    font-size:22px;
+
+    padding:0 12px;
+
+}
+
+/*=====================
+      LABEL
+======================*/
+
+label{
+
+    display:block;
+
+    margin-top:18px;
+
+    margin-bottom:8px;
+
+    color:#f8e8bf;
+
+    font-size:15px;
+
+}
+
+/*=====================
+      INPUTS
+======================*/
+
+input[type=text],
+input[type=number],
+select,
+textarea{
+
+    width:100%;
+
+    padding:14px;
+
+    background:#2c2720;
+
+    border:2px solid #68512b;
+
+    border-radius:8px;
+
+    color:white;
+
+    font-size:15px;
+
+    transition:.35s;
+
+}
+
+textarea{
+
+    min-height:160px;
+
+    resize:vertical;
+
+}
+
+input:focus,
+select:focus,
+textarea:focus{
+
+    outline:none;
+
+    border-color:#e4bb52;
+
+    box-shadow:
+    0 0 12px #c99d2f;
+
+}
+
+/*=====================
+ RADIO E CHECKBOX
+======================*/
+
+input[type=radio],
+input[type=checkbox]{
+
+    accent-color:#d6ab42;
+
+    transform:scale(1.2);
+
+    margin-right:8px;
+
+}
+
+.opcoes{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:15px;
+
+    margin-top:15px;
+
+}
+
+.opcoes label{
+
+    display:flex;
+
+    align-items:center;
+
+    padding:12px 18px;
+
+    background:#2c2720;
+
+    border:2px solid #5f4b27;
+
+    border-radius:8px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.opcoes label:hover{
+
+    background:#3d3528;
+
+    border-color:#d9ae49;
+
+    transform:translateY(-3px);
+
+}
+
+/*=====================
+      BOTÕES
+======================*/
+
+.botoes{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:20px;
+
+    margin-top:35px;
+
+}
+
+input[type=submit],
+input[type=reset]{
+
+    width:220px;
+
+    padding:15px;
+
+    border:none;
+
+    border-radius:10px;
+
+    font-size:16px;
+
+    font-family:"Cinzel";
+
+    font-weight:bold;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+/* BOTÃO CRIAR */
+
+input[type=submit]{
+
+    background:linear-gradient(#d8b04f,#8b6924);
+
+    color:white;
+
+    box-shadow:0 0 15px rgba(255,210,100,.3);
+
+}
+
+input[type=submit]:hover{
+
+    transform:translateY(-4px);
+
+    box-shadow:0 0 25px gold;
+
+}
+
+/* BOTÃO RESET */
+
+input[type=reset]{
+
+    background:linear-gradient(#8d3434,#511616);
+
+    color:white;
+
+}
+
+input[type=reset]:hover{
+
+    transform:translateY(-4px);
+
+    box-shadow:0 0 20px crimson;
+
+}
+
+/*=====================
+      SCROLL
+======================*/
+
+::-webkit-scrollbar{
+
+    width:10px;
+
+}
+
+::-webkit-scrollbar-track{
+
+    background:#1d1a17;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+    background:#7a5f2b;
+
+    border-radius:10px;
+
+}
+
+::-webkit-scrollbar-thumb:hover{
+
+    background:#c9a247;
+
+}
+
+/*=====================
+      RESPONSIVO
+======================*/
+
+@media(max-width:700px){
+
+    body{
+
+        padding:20px;
+
+    }
+
+    form{
+
+        padding:20px;
+
+    }
+
+    h1{
+
+        font-size:34px;
+
+    }
+
+    .botoes{
+
+        flex-direction:column;
+
+    }
+
+    input[type=submit],
+    input[type=reset]{
+
+        width:100%;
+
+    }
+
+}
